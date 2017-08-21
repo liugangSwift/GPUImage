@@ -1,0 +1,25 @@
+## Built-in filters (内置滤镜)##
+125 个内置滤镜：分类
+### 1. Color adjustments（颜色调整） ###
+- **GPUImageBrightnessFilter**: Adjusts the brightness of the image
+  - *brightness*: The adjusted brightness (-1.0 - 1.0, with 0.0 as the default)
+  - *调整图片亮度*：亮度范围 （-1.0 - 1.0），默认为0
+  
+- **GPUImageExposureFilter**: Adjusts the exposure of the image
+  - *exposure*: The adjusted exposure (-10.0 - 10.0, with 0.0 as the default)
+  - *曝光度*：曝光度范围 （-10.0 - 10.0）， 默认为0
+  
+- **GPUImageContrastFilter**: Adjusts the contrast of the image
+  - *contrast*: The adjusted contrast (0.0 - 4.0, with 1.0 as the default)
+  - *对比度*： 对比度范围（0.0-4.0）默认为1.9
+  
+- **GPUImageSaturationFilter**: Adjusts the saturation of an image
+  - *saturation*: The degree of saturation or desaturation to apply to the image (0.0 - 2.0, with 1.0 as the default)
+  - *饱和度*：饱和度范围（0.0-2.0）默认1.0
+  
+ - **GPUImageGammaFilter**: Adjusts the gamma of an image
+  - *gamma*: The gamma adjustment to apply (0.0 - 3.0, with 1.0 as the default)
+  - *伽马*： 伽马校正范围（0.0-3.0）默认是1.0，不失真
+ 
+ - **GPUImageLevelsFilter**: Photoshop-like levels adjustment. The min, max, minOut and maxOut parameters are floats in the range [0, 1]. If you have parameters from Photoshop in the range [0, 255] you must first convert them to be [0, 1]. The gamma/mid parameter is a float >= 0. This matches the value from Photoshop. If you want to apply levels to RGB as well as individual channels you need to use this filter twice - first for the individual channels and then for all channels.
+ 
